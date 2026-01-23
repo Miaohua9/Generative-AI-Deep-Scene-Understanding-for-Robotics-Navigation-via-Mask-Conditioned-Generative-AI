@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Point-supervised Seagrass Segmentation for 3D Underwater Habitat Mapping</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Point-supervised Seagrass Segmentation for 3D Underwater Habitat Mapping</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Miaohua Zhang, Rodrigo Santa Cruz, Yulia Arzhaeva, Xun Li, Brendan Do, Jeremy Oorloff, Mohammad Ali Armin, Zeeshan Hayder, David Ahmedt-Aristizabal</a><sup>*</sup>,</span>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Data61, CSIRO<br>DICTA2024, Perth, Australia</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://ieeexplore.ieee.org/document/10869547" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="https://publications.csiro.au/publications/publication/PIcsiro:EP2024-3026" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>CSIRO</span>
+                    </a>
+                  </span>
+
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Result Images with Captions -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered"></h2>
+
+    <div class="content">
+      <figure>
+        <img src="static/images/framework1.png" alt="An overview of the point-supervised seagrass segmentation ">
+        <figcaption class="has-text-centered">
+          <strong>Figure 1:</strong> An overview of the point-supervised seagrass segmentation and the 3D habitat mapping. Seagrass masks for 2D and
+3D segmentation are represented in green.
+        </figcaption>
+      </figure>
+
+      <!-- Add more figures here as needed -->
+    </div>
+  </div>
+</section>
+  
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Underwater imagery is often used in marine monitoring, for example in seagrass habitat mapping applications. It facilitates the collection of vital observations such as coverage estimation, species detection and recognition across diverse spatial
+scales. Analysing these images often relies on fully supervised segmentation methods, necessitating labour-intensive pixel-wise mask annotations and resulting in significant expert labelling
+costs. While previous efforts have explored weak supervision with point annotation, their focus has predominantly been on coarse seagrass segmentation, often limited to segmenting patches. This
+emphasis has overlooked the aspects of fine-grained segmentation and multi-dimensional mapping essential for seagrass habitat characterisation. In this paper, we propose a label-efficient finegrained seagrass segmentation approach based on weak supervision with sparse point annotations, coupled with photogrammetric technology for underwater large-scale 3D habitat mapping.
+Our point-based supervision method, utilises 2D images to guide the segmentation process. We generate 3D mesh models and orthoimages of the seagrass habitat from collected underwater data.
+Subsequently, we map the semantic information directly into 3D space using a 2D-3D rasterisation-based approach and through a patch-based orthomosaic segmentation technique. The proposed
+approach is evaluated on the benchmark camouflaged object detection dataset, showing promising results in point-supervised segmentation. Additionally, it provides qualitative results in 2D
+segmentation, 3D seagrass mapping, and orthomosaic generation. Our approach offers a straightforward method to characterise seagrass habitats at a large scale, contributing to the advancement
+of marine conservation efforts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+ <!-- Result Images with Captions -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">2D seagrass segmentation</h2>
+
+    <div class="content">
+      <figure>
+        <img src="static/images/Point_seagrass.png" alt="2D seagrass segmentation">
+        <figcaption class="has-text-centered">
+          <strong>Figure 1:</strong>  Overview of the proposed point-supervised image segmentation framework 
+        </figcaption>
+      </figure>
+
+      <!-- Add more figures here as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Table Results Carousel -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">3D seagrass mapping</h2>
+    <div id="table-carousel" class="carousel results-carousel">
+
+      <!-- Table 1 -->
+      <div class="item has-text-centered">
+        <img src="static/images/mapping2D_3D.png" alt="Performance Table 1"
+             style="max-width: 100%; height: auto;" />
+        <h2 class="subtitle has-text-centered mt-4">
+          <strong>Table 1:</strong> 2D-3D mapping and orthomosaic projection.
+        </h2>
+      </div>
+
+      <!-- Table 2 -->
+      <div class="item has-text-centered">
+        <img src="static/images/patch_seg.png" alt="Performance Table 2"
+             style="max-width: 100%; height: auto;" />
+        <h2 class="subtitle has-text-centered mt-4">
+          <strong>Table 2:</strong> Diagram of the patch-based orthomosaic segmentation approach.
+        </h2>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
+<!-- Result Images with Captions -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Quantitative results</h2>
+
+    <div class="content">
+      <figure>
+        <img src="static/images/table_public.png" alt="2D seagrass segmentation">
+        <figcaption class="has-text-centered">
+          <strong>Figure 1:</strong>  Performance comparison with the public available CHAMELEON, CAMO, and COD10K datasets.
+        </figcaption>
+      </figure>
+
+      <!-- Add more figures here as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Visual Results Carousel -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Qualitative Visualizations</h2>
+    <div id="visual-carousel" class="carousel results-carousel">
+
+      <!-- Visual 1 -->
+      <div class="item has-text-centered">
+        <img src="static/images/public_visual.png" alt="Visual Result 1"
+             style="max-width: 100%; height: auto;" />
+        <h2 class="subtitle has-text-centered mt-4">
+          <strong>Figure 1:</strong> Qualitative comparison of existing methods and the proposed approach on the camouflaged public dataset.
+        </h2>
+      </div>
+
+      <!-- Visual 2 -->
+      <div class="item has-text-centered">
+        <img src="static/images/seagrass_visual.png" alt="Visual Result 2"
+             style="max-width: 100%; height: auto;" />
+        <h2 class="subtitle has-text-centered mt-4">
+          <strong>Figure 2:</strong> Segmentation masks on the “Indo” seagrass dataset using SegFormer, SAM-Adapter, and our method.
+        </h2>
+      </div>
+
+      <!-- Visual 3 -->
+      <div class="item has-text-centered">
+        <img src="static/images/visual_3Dmapping.png" alt="Visual Result 2"
+             style="max-width: 100%; height: auto;" />
+        <h2 class="subtitle has-text-centered mt-4">
+          <strong>Figure 3:</strong> Orthomosaic segmentation obtained with the methodologies described in Section III-C and the proposed deep learning segmentation model. Orthomosaic image segmentation using the described patch-based segmentation (a), and
+2D-3D mapping methods (b).
+        </h2>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{zhang2024efficient,
+  title={Point-supervised Seagrass Segmentation for 3D Underwater Habitat Mapping},
+  author={Miaohua Zhang, Rodrigo Santa Cruz, Yulia Arzhaeva, Xun Li, Brendan Do, Jeremy Oorloff, Mohammad Ali Armin, Zeeshan Hayder, David Ahmedt-Aristizabal},
+  booktitle={2024 International Conference on Digital Image Computing: Techniques and Applications (DICTA)},
+  year={2024},
+  organization={IEEE}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
