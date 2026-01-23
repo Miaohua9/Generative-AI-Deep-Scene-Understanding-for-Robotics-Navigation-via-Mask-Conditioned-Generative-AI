@@ -126,15 +126,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Underwater imagery is often used in marine monitoring, for example in seagrass habitat mapping applications. It facilitates the collection of vital observations such as coverage estimation, species detection and recognition across diverse spatial
-scales. Analysing these images often relies on fully supervised segmentation methods, necessitating labour-intensive pixel-wise mask annotations and resulting in significant expert labelling
-costs. While previous efforts have explored weak supervision with point annotation, their focus has predominantly been on coarse seagrass segmentation, often limited to segmenting patches. This
-emphasis has overlooked the aspects of fine-grained segmentation and multi-dimensional mapping essential for seagrass habitat characterisation. In this paper, we propose a label-efficient finegrained seagrass segmentation approach based on weak supervision with sparse point annotations, coupled with photogrammetric technology for underwater large-scale 3D habitat mapping.
-Our point-based supervision method, utilises 2D images to guide the segmentation process. We generate 3D mesh models and orthoimages of the seagrass habitat from collected underwater data.
-Subsequently, we map the semantic information directly into 3D space using a 2D-3D rasterisation-based approach and through a patch-based orthomosaic segmentation technique. The proposed
-approach is evaluated on the benchmark camouflaged object detection dataset, showing promising results in point-supervised segmentation. Additionally, it provides qualitative results in 2D
-segmentation, 3D seagrass mapping, and orthomosaic generation. Our approach offers a straightforward method to characterise seagrass habitats at a large scale, contributing to the advancement
-of marine conservation efforts.
+            Marine obstacle detection demands robust segmentation under challenging conditions, such as sun glitter, fog, and rapidly changing wave patterns. These factors degrade image quality, while the scarcity and structural repetition
+of marine datasets limit the diversity of available training data. Although mask-conditioned diffusion models can synthesize layout-aligned samples, they often produce low-diversity outputs when conditioned on low-entropy masks
+and prompts, limiting their utility for improving robustness. In this paper, we propose a quality-driven and diversity-aware sample expansion pipeline that generates training data entirely at inference time, without retraining the diffusion model. The framework combines two key components: (i) a class-aware style bank that constructs high-entropy, semantically grounded prompts, and (ii) an adaptive annealing sampler that perturbs early conditioning, while a
+COD-guided proportional controller regulates this perturbation to boost diversity without compromising layout fidelity. Across marine obstacle benchmarks, augmenting training data with these controlled synthetic samples consistently improves segmentation performance across multiple backbones and increases visual variation in rare and
+texture-sensitive classes.
           </p>
         </div>
       </div>
