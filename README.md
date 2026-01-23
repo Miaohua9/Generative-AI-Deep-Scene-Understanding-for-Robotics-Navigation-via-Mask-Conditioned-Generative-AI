@@ -1,4 +1,4 @@
-# Academic Project Page Template
+# Quality-Driven and Diversity-Aware Sample Expansion for Robust Marine Obstacle Segmentation
 This is project page for the paper: Quality-Driven and Diversity-Aware Sample Expansion for Robust Marine Obstacle Segmentation,
 
 2026 WACV workshop; 5th Workshop on Image/Video/Audio Quality Assessment in Computer Vision, VLM and Diffusion Model
